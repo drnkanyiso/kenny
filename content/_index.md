@@ -2,7 +2,8 @@
 title: "Dr. Nkanyiso"
 description: "Dr. Nkanyiso describes a practice rooted in African traditional values, ancestral knowledge, herbalism, and spiritual consultation."
 hero:
-  heading: "Love spell caster Dr. Nkanyiso"
+  heading: "Trusted Witchdoctor for Love, Business, Family & Spiritual Challenges"
+  heading_lead: "Trusted Witchdoctor"
   subtitle: "Traditional spiritual consultation for love, marriage, protection, career ambitions, talent, and educational concerns."
   image: "/images/home-hero-v2.png"
   image_alt: ""

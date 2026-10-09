@@ -11,7 +11,8 @@
  <div class="hero-shade" aria-hidden="true"></div>
  <div class="hero-content">
   <p class="eyebrow hero-eyebrow">{{ $.Params.ui.hero_eyebrow }}</p>
-  <h1 id="hero-heading">{{ .heading }}</h1><p class="hero-subtitle">{{ .subtitle }}</p>
+  <h1 id="hero-heading">{{ with .heading_lead }}<span class="hero-title-lead">{{ . }}</span> <span class="hero-title-detail">{{ trim (strings.TrimPrefix . $.Params.hero.heading) " " }}</span>{{ else }}{{ .heading }}{{ end }}</h1>
+  <p class="hero-subtitle">{{ .subtitle }}</p>
   <div class="hero-actions">
    {{ if or $.Site.Params.phone $.Site.Params.email $.Site.Params.whatsapp_url }}
    <a class="button button-primary" href="{{ .contact_url | relURL }}">{{ .contact_label }} {{ partial "icon.html" "arrow" }}</a>
