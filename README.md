@@ -33,6 +33,10 @@ sections, and reduced motion. Preview screenshots are written to `.preview/`.
 
 ## Contact and hosting setup
 
+Netlify reads `netlify.toml` to install Hugo 0.124.1 and Node 22, run
+`npm run build` (Tailwind followed by Hugo), and publish `public/`.
+The repository configuration overrides the build command in the Netlify UI.
+
 No domain, phone, email, WhatsApp number, or address is configured. Add Dr. Nkanyiso's confirmed details in `hugo.toml` and `content/contact-us.md`. Set `baseURL` to the final domain before deploying. Contact actions and the email form appear only when the corresponding details are configured.
 
 The static form opens the visitor's email application when a recipient is configured. It does not send or store submissions on a server.
