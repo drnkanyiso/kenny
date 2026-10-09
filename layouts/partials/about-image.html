@@ -1,0 +1,2 @@
+{{ $page := .Site.GetPage "/about-us" }}
+<img src="{{ "/images/about-v2-640.jpg" | relURL }}" srcset="{{ "/images/about-v2-640.jpg" | relURL }} 640w, {{ "/images/about-v2-1000.jpg" | relURL }} 1000w" sizes="(max-width: 800px) calc(100vw - 32px), (max-width: 1264px) 40vw, 476px" alt="{{ $page.Params.image_alt }}" width="640" height="480" {{ if .IsHome }}loading="lazy" decoding="async"{{ else }}fetchpriority="high"{{ end }}>

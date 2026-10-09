@@ -1,0 +1,7 @@
+{{ with .Params.services }}
+<section class="section services-section" id="services" aria-labelledby="services-heading">
+ <div class="section-inner">
+  <header class="section-heading"><p class="eyebrow">{{ .eyebrow }}</p><h2 id="services-heading">{{ .heading }}</h2><p>{{ .intro }}</p></header>
+  {{ partial "service-grid.html" ($.Site.GetPage "/services").RegularPages.ByWeight }}
+ </div>
+</section>{{ end }}

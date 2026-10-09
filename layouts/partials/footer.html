@@ -1,0 +1,42 @@
+{{ $home := .Site.GetPage "/" }}
+{{ $contact := .Site.GetPage "/contact-us" }}
+<footer class="site-footer">
+  <div class="section-inner footer-main">
+    <div class="footer-brand">
+      <a class="brand brand-footer" href="{{ "/" | relURL }}">
+        <img src="{{ .Site.Params.footer_logo | default .Site.Params.logo | relURL }}" alt="{{ .Site.Title }} — Traditional Spiritual" width="250" height="90" loading="lazy">
+      </a>
+      <p>{{ .Site.Params.footer_description | default .Site.Params.description }}</p>
+      {{ with $home.Params.social }}
+        <nav class="social-links" aria-label="{{ $home.Params.ui.social_navigation }}">
+          {{ range . }}<a class="footer-social" href="{{ .url }}" aria-label="{{ .name }}" target="_blank" rel="noopener noreferrer">{{ partial "icon.html" (.name | lower) }}</a>{{ end }}
+        </nav>
+      {{ end }}
+    </div>
+    <section class="footer-contact" aria-labelledby="footer-contact-heading">
+      <h2 id="footer-contact-heading">{{ $home.Params.ui.footer_contact_heading }}</h2>
+      {{ with $contact.Params.contact.address }}<div class="footer-info-row">{{ partial "icon.html" "pin" }}<p>{{ . }}</p></div>{{ end }}
+      {{ with .Site.Params.phone }}<a class="footer-info-row" href="tel:{{ . }}">{{ partial "icon.html" "phone" }}<span>{{ . }}</span></a>{{ end }}
+      {{ with .Site.Params.email }}<a class="footer-info-row" href="mailto:{{ . }}">{{ partial "icon.html" "mail" }}<span>{{ . }}</span></a>{{ end }}
+      {{ with .Site.Params.whatsapp_url }}<a class="footer-info-row" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ partial "icon.html" "chat" }}<span>WhatsApp</span></a>{{ end }}
+      {{ if not (or $contact.Params.contact.address .Site.Params.phone .Site.Params.email .Site.Params.whatsapp_url) }}<div class="footer-info-row">{{ partial "icon.html" "mail" }}<p>Contact details coming soon.</p></div>{{ end }}
+      <a class="footer-info-link" href="{{ "/contact-us/" | relURL }}">Contact information {{ partial "icon.html" "arrow" }}</a>
+    </section>
+    <nav class="footer-navigation" aria-labelledby="footer-links-heading">
+      <h2 id="footer-links-heading">Quick Links</h2>
+      {{ range .Site.Menus.main }}<a href="{{ .URL | relURL }}">{{ .Name }}</a>{{ end }}
+    </nav>
+    <section class="footer-hours" aria-labelledby="footer-hours-heading">
+      <h2 id="footer-hours-heading">Hours</h2>
+      <div class="footer-info-row">
+        {{ partial "icon.html" "clock" }}
+        {{ with .Site.Params.hours }}<ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>{{ else }}<p>Consultation hours will be published when available.</p>{{ end }}
+      </div>
+    </section>
+  </div>
+  <div class="section-inner footer-disclaimer">
+    <h2>{{ $home.Params.ui.footer_disclaimer_heading }}</h2>
+    <p>{{ $home.Params.disclaimer }}</p>
+  </div>
+  <div class="footer-bottom"><p>{{ $home.Params.ui.copyright_prefix }} &copy; {{ now.Format "2006" }} {{ .Site.Title }}</p><a href="{{ "/#content" | relURL }}">Back to top</a></div>
+</footer>

@@ -1,0 +1,12 @@
+{{ $page := .page }}
+<article class="service-card flex flex-col">
+  <div class="service-image-wrap">
+    {{ partial "service-image.html" (dict "page" $page "detail" false) }}
+    <span class="service-number" aria-hidden="true">{{ printf "%02d" $page.Weight }}</span>
+  </div>
+  <div class="service-card-copy flex flex-1 flex-col">
+    <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+    <p>{{ $page.Description }}</p>
+    <a class="button button-service" href="{{ $page.RelPermalink }}" aria-label="Read more about {{ $page.Title }}">Read more {{ partial "icon.html" "arrow" }}</a>
+  </div>
+</article>

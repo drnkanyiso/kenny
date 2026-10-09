@@ -1,0 +1,8 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }} home">
+      <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }} — Traditional Spiritual" width="250" height="90">
+    </a>
+    {{ partial "navigation.html" . }}
+  </div>
+</header>

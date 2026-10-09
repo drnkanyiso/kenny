@@ -1,0 +1,48 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Dr. Nkanyiso"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  footer_description = "Traditional spiritual guidance rooted in ancestral knowledge and African values."
+  hours = []
+  description = "Dr. Nkanyiso describes a practice rooted in African traditional values, ancestral knowledge, herbalism, and spiritual consultation."
+  phone = ""
+  email = ""
+  whatsapp_url = ""
+  logo = "/images/logo.png"
+  footer_logo = "/images/logo-footer.png"
+  default_image = "/images/home-hero-v2.png"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menu.main]]
+  name = "About Us"
+  url = "/about-us/"
+  weight = 20
+
+[[menu.main]]
+  name = "Our Services"
+  url = "/services/"
+  weight = 30
+
+[[menu.main]]
+  name = "Insights"
+  url = "/blog/"
+  weight = 40
+
+[[menu.main]]
+  name = "Contact Us"
+  url = "/contact-us/"
+  weight = 50
+
+[permalinks]
+  blog = "/:slug/"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5

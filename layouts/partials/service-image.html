@@ -1,0 +1,16 @@
+{{ $page := .page }}
+{{ $source := resources.Get (strings.TrimPrefix "/" $page.Params.featured_image) }}
+{{ if $source }}
+  {{ $anchor := $page.Params.image_focus | default "Center" }}
+  {{ $small := $source.Fill (printf "640x336 %s jpg q85" $anchor) }}
+  {{ $large := $source.Fill (printf "1200x630 %s jpg q85" $anchor) }}
+  {{ if .detail }}
+    {{ $small = $source.Resize "640x jpg q82" }}
+    {{ $large = $source.Resize "1200x jpg q85" }}
+  {{ end }}
+  {{ $image := $small }}
+  {{ if .detail }}{{ $image = $large }}{{ end }}
+  <img {{ if .detail }}class="service-cover"{{ end }} src="{{ $image.RelPermalink }}" srcset="{{ $small.RelPermalink }} 640w, {{ $large.RelPermalink }} 1200w" sizes="{{ if .detail }}(max-width: 800px) calc(100vw - 32px), (max-width: 1264px) calc(100vw - 452px), 812px{{ else }}(max-width: 680px) calc(100vw - 32px), (max-width: 1024px) 46vw, 384px{{ end }}" alt="{{ $page.Params.image_alt }}" width="{{ $image.Width }}" height="{{ $image.Height }}" {{ if .detail }}fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
+{{ else }}
+  <img {{ if .detail }}class="service-cover"{{ end }} src="{{ $page.Params.featured_image | relURL }}" alt="{{ $page.Params.image_alt }}" width="960" height="540" {{ if .detail }}fetchpriority="high"{{ else }}loading="lazy" decoding="async"{{ end }}>
+{{ end }}

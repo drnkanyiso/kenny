@@ -1,0 +1,73 @@
+<section class="page-shell contact-page">
+  {{ partial "breadcrumbs.html" . }}
+  <header class="page-heading">
+    <p class="eyebrow">{{ .Params.intro.eyebrow }}</p>
+    <h1>{{ .Params.intro.heading }}</h1>
+    <p class="page-description">{{ .Params.intro.body }}</p>
+  </header>
+  {{ $hasContact := or .Params.contact.phone .Params.contact.email .Params.contact.address .Site.Params.whatsapp_url .Params.form.recipient }}
+  {{ if $hasContact }}<div class="contact-grid">
+    <div class="contact-details">
+      {{ if .Params.contact.phone }}<section class="contact-card">
+        <span class="contact-icon">{{ partial "icon.html" "phone" }}</span>
+        <h2>{{ .Params.form.call_heading }}</h2>
+        <a href="tel:{{ .Params.contact.phone }}">{{ .Params.contact.phone }}</a>
+      </section>{{ end }}
+      {{ if .Params.contact.email }}<section class="contact-card">
+        <span class="contact-icon">{{ partial "icon.html" "mail" }}</span>
+        <h2>{{ .Params.form.email_heading }}</h2>
+        <a href="mailto:{{ .Params.contact.email }}">{{ .Params.contact.email }}</a>
+      </section>{{ end }}
+      {{ if .Params.contact.address }}<section class="contact-card">
+        <span class="contact-icon">{{ partial "icon.html" "pin" }}</span>
+        <h2>{{ .Params.form.address_heading }}</h2>
+        <p>{{ .Params.contact.address }}</p>
+      </section>{{ end }}
+      {{ if .Site.Params.whatsapp_url }}<a class="button button-whatsapp contact-whatsapp" href="{{ .Site.Params.whatsapp_url }}" target="_blank" rel="noopener noreferrer">{{ .Params.form.whatsapp_label }}</a>{{ end }}
+    </div>
+    {{ if .Params.form.recipient }}<div class="contact-form-panel">
+      <h2>{{ .Params.form.heading }}</h2>
+      <form class="contact-form" aria-describedby="form-delivery-note" data-recipient="{{ .Params.form.recipient }}" data-success="{{ .Params.form.success_message }}">
+        <div class="form-row">
+          <label for="contact-name">{{ .Params.form.name_label }}</label>
+          <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="120" required>
+        </div>
+        <div class="form-row">
+          <label for="contact-email">{{ .Params.form.email_label }}</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="contact-phone">{{ .Params.form.phone_label }}</label>
+          <input id="contact-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="form-row">
+          <label for="contact-subject">{{ .Params.form.subject_label }}</label>
+          <input id="contact-subject" name="subject" type="text">
+        </div>
+        <div class="form-row">
+          <label for="contact-message">{{ .Params.form.message_label }}</label>
+          <textarea id="contact-message" name="message" rows="5" maxlength="5000" required></textarea>
+        </div>
+        <button class="button button-primary" type="submit">{{ .Params.form.submit_label }}</button>
+        <p class="form-note" id="form-delivery-note">{{ .Params.form.delivery_note }}</p>
+        <p class="form-status" aria-live="polite" role="status"></p>
+      </form>
+    </div>{{ end }}
+  </div>
+  {{ else }}
+  <section class="contact-empty" aria-labelledby="contact-availability-heading">
+   <span class="contact-icon">{{ partial "icon.html" "mail" }}</span>
+   <div><p class="eyebrow">Contact availability</p><h2 id="contact-availability-heading">Contact details coming soon</h2><p>Dr. Nkanyiso's contact details will appear here when available. In the meantime, explore the services and read the answers below.</p><a class="text-link" href="{{ "/#services" | relURL }}">Explore services {{ partial "icon.html" "arrow" }}</a></div>
+  </section>{{ end }}
+  {{ with .Params.faq }}
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">{{ $.Params.form.faq_heading }}</h2>
+      {{ range . }}
+        <details class="faq-item">
+          <summary>{{ .question }} {{ partial "icon.html" "chevron" }}</summary>
+          <p>{{ .answer }}</p>
+        </details>
+      {{ end }}
+    </section>
+  {{ end }}
+</section>

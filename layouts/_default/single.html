@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="page-shell article-page">
+ {{ partial "breadcrumbs.html" . }}
+ <header class="page-heading"><p class="eyebrow">{{ .Section | humanize }}</p><h1>{{ .Title }}</h1>
+ {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+ {{ if eq .Section "blog" }}<p class="article-date"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time> &middot; {{ .ReadingTime }} min read</p>{{ end }}</header>
+ {{ with .Params.featured_image }}<img class="article-cover" src="{{ . | relURL }}" alt="{{ $.Params.image_alt | default "" }}" width="1200" height="600" fetchpriority="high">{{ end }}
+ <div class="prose">{{ .Content }}</div>
+ {{ if eq .Section "blog" }}
+ <div class="article-end"><a class="text-link" href="{{ "/blog/" | relURL }}">Back to all insights {{ partial "icon.html" "arrow" }}</a></div>
+ <nav class="article-pagination" aria-label="More articles">
+ {{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><span>Previous article</span><strong>{{ .Title }}</strong></a>{{ end }}
+ {{ with .NextInSection }}<a href="{{ .RelPermalink }}"><span>Next article</span><strong>{{ .Title }}</strong></a>{{ end }}
+ </nav>{{ end }}
+</article>{{ end }}

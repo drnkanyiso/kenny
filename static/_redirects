@@ -1,0 +1,7 @@
+/sample-page/ / 301
+/symptoms/ / 301
+/contagion/ / 301
+/prevention/ / 301
+/hello-world/ /blog/ 301
+/category/uncategorized/ /blog/ 301
+/feed/ /index.xml 301

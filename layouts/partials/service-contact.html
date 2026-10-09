@@ -1,0 +1,15 @@
+<aside class="service-contact-panel" aria-labelledby="service-contact-heading">
+  <span class="contact-icon">{{ partial "icon.html" "mail" }}</span>
+  <p class="eyebrow">Your next step</p>
+  <h2 id="service-contact-heading">Contact Dr. Nkanyiso</h2>
+  <p>Ask about {{ .Title | lower }} and discuss your situation.</p>
+  {{ $configured := or .Site.Params.phone .Site.Params.email .Site.Params.whatsapp_url }}
+  {{ if not $configured }}<p class="service-contact-note">Contact details will be added when available.</p>{{ end }}
+  <div class="service-contact-actions">
+    {{ with .Site.Params.whatsapp_url }}<a class="button button-whatsapp" href="{{ . }}?text={{ printf "Hello Dr. Nkanyiso, I would like to ask about %s." $.Title | urlquery }}" target="_blank" rel="noopener noreferrer">Chat on WhatsApp {{ partial "icon.html" "arrow" }}</a>{{ end }}
+    {{ with .Site.Params.phone }}<a class="button button-primary" href="tel:{{ . }}">Call Dr. Nkanyiso</a>{{ end }}
+    {{ with .Site.Params.email }}<a class="button button-service" href="mailto:{{ . }}?subject={{ printf "Enquiry about %s" $.Title | urlquery }}">Send an email</a>{{ end }}
+    <a class="text-link" href="{{ "/contact-us/" | relURL }}">Contact information {{ partial "icon.html" "arrow" }}</a>
+  </div>
+  <p class="service-contact-note">Spiritual services reflect traditional beliefs. Outcomes are not guaranteed.</p>
+</aside>

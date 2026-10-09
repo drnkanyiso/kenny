@@ -1,0 +1,16 @@
+{{ with .Params.about }}
+  <section class="section about-section" id="about" aria-labelledby="about-heading">
+    <div class="section-inner about-grid">
+      <div class="about-image-wrap">
+        {{ partial "about-image.html" $ }}
+        <span class="about-image-accent" aria-hidden="true"></span>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">{{ .eyebrow }}</p>
+        <h2 id="about-heading">{{ .heading }}</h2>
+        <p>{{ .summary }}</p>
+        <a class="button button-service" href="{{ "/about-us/" | relURL }}" aria-label="Read more about Dr. Nkanyiso">{{ .button_label }} {{ partial "icon.html" "arrow" }}</a>
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,8 @@
+node_modules/
+.npm-cache/
+.preview/
+public/
+resources/_gen/
+.hugo_build.lock
+.env
+.env.*

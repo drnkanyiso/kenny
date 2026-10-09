@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="page-shell service-page">
+  {{ partial "breadcrumbs.html" . }}
+  <header class="page-heading">
+    <p class="eyebrow">Spiritual consultation</p>
+    <h1>{{ .Title }}</h1>
+    <p class="page-description">{{ .Description }}</p>
+  </header>
+  <div class="service-detail-grid">
+    <div class="service-detail-copy">
+      {{ partial "service-image.html" (dict "page" . "detail" true) }}
+      <div class="prose">{{ .Content }}</div>
+      <a class="text-link" href="{{ "/services/" | relURL }}">Explore all services {{ partial "icon.html" "arrow" }}</a>
+    </div>
+    {{ partial "service-contact.html" . }}
+  </div>
+</article>
+{{ end }}

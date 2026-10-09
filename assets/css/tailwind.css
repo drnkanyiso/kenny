@@ -1,0 +1,12 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@source "../../layouts";
+
+@theme {
+  --font-sans: "Figtree", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --color-brand-purple: #4c2575;
+  --color-brand-deep: #211337;
+  --color-brand-green: #15803d;
+  --color-brand-lilac: #f5f1fa;
+}

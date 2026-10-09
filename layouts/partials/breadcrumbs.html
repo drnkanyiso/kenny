@@ -1,0 +1,5 @@
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>
+<li><a href="{{ "/" | relURL }}">Home</a></li>
+{{ if and .IsPage (eq .Section "blog") }}<li><a href="{{ "/blog/" | relURL }}">Insights</a></li>{{ end }}
+{{ if and .IsPage (eq .Section "services") }}<li><a href="{{ "/services/" | relURL }}">Services</a></li>{{ end }}
+<li aria-current="page">{{ .Title }}</li></ol></nav>

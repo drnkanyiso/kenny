@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <section class="page-shell">
+    {{ partial "breadcrumbs.html" . }}
+    <header class="page-heading">
+      <p class="eyebrow">{{ .Section | humanize }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+    </header>
+    <div class="article-grid">
+      {{ range .Pages.ByDate.Reverse }}
+        {{ partial "article-card.html" . }}
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+{{ partial "seo.html" . }}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#4c2575">
+<link rel="icon" type="image/png" href="{{ .Site.Params.logo | relURL }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap">
+{{ $styles := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+{{ $utilities := resources.Get "css/tailwind.generated.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $utilities.RelPermalink }}" integrity="{{ $utilities.Data.Integrity }}">
+{{ $script := resources.Get "js/main.js" | minify | fingerprint }}
+<script defer src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>

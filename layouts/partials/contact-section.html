@@ -1,0 +1,17 @@
+{{ with .Params.contact_section }}
+  <section class="contact-band" aria-labelledby="contact-band-heading">
+    <div class="section-inner contact-band-inner">
+      <div>
+        <p class="eyebrow">{{ .eyebrow }}</p>
+        <h2 id="contact-band-heading">{{ .heading }}</h2>
+        <p>{{ .body }}</p>
+      </div>
+      <div class="contact-band-actions">
+        {{ with $.Site.Params.whatsapp_url }}
+          <a class="button button-whatsapp" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ partial "icon.html" "chat" }} Chat on WhatsApp</a>
+        {{ end }}
+        <a class="button button-light" href="{{ "/contact-us/" | relURL }}">{{ .button_label }} {{ partial "icon.html" "arrow" }}</a>
+      </div>
+    </div>
+  </section>
+{{ end }}

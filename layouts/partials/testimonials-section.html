@@ -1,0 +1,22 @@
+{{ with .Params.testimonials }}
+  <section class="section testimonials-section bg-brand-lilac" id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="section-inner">
+      <header class="section-heading">
+        <p class="eyebrow">{{ .eyebrow }}</p>
+        <h2 id="testimonials-heading">{{ .heading }}</h2>
+        <p>{{ .intro }}</p>
+      </header>
+      <div class="grid grid-cols-1 gap-6 min-[681px]:grid-cols-2">
+        {{ range .items }}
+          <figure class="testimonial-card">
+            <div class="testimonial-quote">{{ partial "icon.html" "quote" }}</div>
+            <blockquote>
+              {{ range .paragraphs }}<p>{{ . }}</p>{{ end }}
+            </blockquote>
+            <figcaption><span class="testimonial-avatar" aria-hidden="true">{{ substr .name 0 1 }}</span><div><strong>{{ .name }}</strong><span>{{ .location }}</span></div></figcaption>
+          </figure>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

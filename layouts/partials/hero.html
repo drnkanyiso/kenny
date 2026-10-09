@@ -1,0 +1,29 @@
+{{ with .Params.hero }}
+<section class="hero" aria-labelledby="hero-heading">
+ {{ with resources.Get (strings.TrimPrefix "/" .image) }}
+   {{ $mobile := .Resize "800x jpg q85" }}
+   {{ $medium := .Resize "1280x jpg q85" }}
+   {{ $wide := .Resize "1600x jpg q88" }}
+   <img class="hero-image" src="{{ $wide.RelPermalink }}" srcset="{{ $mobile.RelPermalink }} 800w, {{ $medium.RelPermalink }} 1280w, {{ $wide.RelPermalink }} 1600w" sizes="100vw" alt="{{ $.Params.hero.image_alt }}" width="{{ $wide.Width }}" height="{{ $wide.Height }}" fetchpriority="high">
+ {{ else }}
+   <img class="hero-image" src="{{ .image | relURL }}" alt="{{ .image_alt }}" fetchpriority="high">
+ {{ end }}
+ <div class="hero-shade" aria-hidden="true"></div>
+ <div class="hero-content">
+  <p class="eyebrow hero-eyebrow">{{ $.Params.ui.hero_eyebrow }}</p>
+  <h1 id="hero-heading">{{ .heading }}</h1><p class="hero-subtitle">{{ .subtitle }}</p>
+  <div class="hero-actions">
+   {{ if or $.Site.Params.phone $.Site.Params.email $.Site.Params.whatsapp_url }}
+   <a class="button button-primary" href="{{ .contact_url | relURL }}">{{ .contact_label }} {{ partial "icon.html" "arrow" }}</a>
+   <a class="button button-outline" href="#services">Explore services</a>
+   {{ else }}
+   <a class="button button-primary" href="#services">Explore services {{ partial "icon.html" "arrow" }}</a>
+   <a class="button button-outline" href="{{ .contact_url | relURL }}">Contact information</a>
+   {{ end }}
+   {{ with $.Site.Params.phone }}<a class="button button-outline" href="tel:{{ . }}">{{ $.Params.hero.call_label }}</a>{{ end }}
+   {{ with $.Site.Params.whatsapp_url }}<a class="button button-whatsapp" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $.Params.hero.whatsapp_label }}</a>{{ end }}
+  </div>
+  <div class="hero-topics" aria-label="Areas of consultation"><span>Love &amp; marriage</span><span>Protection</span><span>Personal ambitions</span></div>
+ </div>
+ <a class="hero-scroll" href="#about">{{ .scroll_label }} {{ partial "icon.html" "chevron" }}</a>
+</section>{{ end }}

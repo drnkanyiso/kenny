@@ -1,0 +1,9 @@
+<button class="menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" hidden>
+<span class="sr-only">{{ (.Site.GetPage "/").Params.ui.menu_toggle }}</span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+</button>
+<nav class="site-navigation" id="site-navigation" aria-label="{{ (.Site.GetPage "/").Params.ui.main_navigation }}"><ul>
+{{ $page := . }}{{ range .Site.Menus.main }}
+{{ $active := or (and $page.IsHome (eq .URL "/")) (eq $page.RelPermalink .URL) (and (eq .URL "/blog/") (eq $page.Section "blog")) (and (eq .URL "/services/") (eq $page.Section "services")) }}
+<li><a href="{{ .URL | relURL }}" {{ if $active }}aria-current="{{ if eq $page.RelPermalink .URL }}page{{ else }}true{{ end }}"{{ end }} {{ if eq .URL "/contact-us/" }}class="nav-contact"{{ end }}>{{ .Name }}</a></li>
+{{ end }}</ul></nav>
