@@ -12,7 +12,7 @@ Dr. Nkanyiso describes himself as a traditional doctor, herbalist, and spiritual
 
 ## Spiritual practice
 
-He describes using divination, rituals, prayer, chants, and spellwork as forms of spiritual practice. He says people approach him about love and family concerns, business, lost items, addiction, fertility, debt, financial instability, men's sexual wellbeing, political aspirations, gambling, and other personal matters. These are descriptions of spiritual services and beliefs, not guaranteed outcomes or professional advice.
+He describes using divination, rituals, prayer, chants, and spellwork as forms of spiritual practice. He says people approach him about love and family concerns, business, lost items, addiction, fertility, debt, financial instability, men's sexual wellbeing, political aspirations, gambling, and other personal matters. These services reflect spiritual beliefs, and individual experiences vary. Seek qualified professional advice for health, financial, or legal concerns.
 
 ## His stated mission
 

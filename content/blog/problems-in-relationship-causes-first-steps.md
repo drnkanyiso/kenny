@@ -52,7 +52,7 @@ If you feel in immediate danger, contact local emergency services or a trusted s
 
 A calm conversation may be enough for a specific misunderstanding. If the same conflict keeps returning, a qualified relationship counsellor may help explore the pattern and practise clearer communication. You can also speak with someone you trust who will listen without pressuring you toward a particular decision.
 
-If you are considering spiritual support, approach it as a personal choice rather than a guarantee of reconciliation or control over another person. If a partner has ended the relationship, blocked contact, or declined to talk, respect that boundary. Support can help you reflect, but cannot promise that another person will return or change their mind.
+If you are considering spiritual support, approach it as a personal choice while respecting the other person's freedom to make their own decisions. If a partner has ended the relationship, blocked contact, or declined to talk, respect that boundary. Support can help you reflect, but cannot promise that another person will return or change their mind.
 
 ### Frequently asked questions
 

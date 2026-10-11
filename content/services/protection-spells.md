@@ -6,7 +6,7 @@ image_alt: "A welcoming home entrance surrounded by green plants"
 weight: 6
 ---
 
-Dr. Nkanyiso describes protection rituals for concerns about hostility, negative energy, troubling dreams, or spiritual influences. These practices reflect spiritual beliefs and cannot guarantee protection from physical harm.
+Dr. Nkanyiso describes protection rituals for concerns about hostility, negative energy, troubling dreams, or spiritual influences. These practices reflect spiritual beliefs; personal safety also requires practical precautions and appropriate help when facing physical threats.
 
 ## Focus areas
 

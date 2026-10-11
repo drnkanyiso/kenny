@@ -53,7 +53,7 @@ If conversations repeatedly become hostile or leave someone feeling unsafe, seek
 
 Consider whether you feel heard and respected, whether actions match commitments, whether both people are choosing the relationship freely, and what would need to change for you to feel ready to continue.
 
-If you hope to reconnect, focus on what is within your control: honour boundaries, communicate honestly if contact is welcome, and decide what conditions would make renewed contact healthy for you. No spiritual practice can guarantee reconciliation or determine another person's choices.
+If you hope to reconnect, focus on what is within your control: honour boundaries, communicate honestly if contact is welcome, and decide what conditions would make renewed contact healthy for you. Reconciliation depends on each person's freely made choices and willingness to reconnect.
 
 ### Frequently asked questions
 

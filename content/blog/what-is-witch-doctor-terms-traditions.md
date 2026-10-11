@@ -32,7 +32,7 @@ When you encounter the term, consider who is using it: the practitioner's own de
 
 If you are considering spiritual support, ask what name the practitioner uses for their role, what a consultation involves, what fees apply, and what limits they acknowledge. Be cautious of pressure based on claims that you are cursed, unsafe, or certain to lose a relationship unless you pay.
 
-A claim about a curse or black magic is not proof of its cause. Relationship conflict can have many explanations. No spiritual service can guarantee reconciliation or determine another person's choices. Spiritual support should not replace practical steps for communication, personal safety, or family needs.
+A claim about a curse or black magic is not proof of its cause. Relationship conflict can have many explanations. Reconciliation depends on each person's freely made choices and willingness to reconnect. Spiritual support should not replace practical steps for communication, personal safety, or family needs.
 
 ### Frequently asked questions
 

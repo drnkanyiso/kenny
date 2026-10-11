@@ -8,7 +8,7 @@ weight: 8
 
 Dr. Nkanyiso describes traditional rings associated with fortune, blessings, spiritual protection, love, and personal ambitions. Consultations may explore employment, promotion, business opportunities, contracts, tenders, wealth, and religious or creative aspirations.
 
-The rings are offered as part of a spiritual practice; they do not guarantee money, contracts, employment, or lottery, horse betting, or casino wins.
+The rings are offered as part of a spiritual practice. Financial and career outcomes depend on individual circumstances and practical decisions; gambling involves chance and the risk of losing money.
 
 ## Focus areas
 

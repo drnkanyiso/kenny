@@ -39,7 +39,7 @@ faq:
       The time it takes to experience results varies depending on the type of spiritual
       service and the individual circumstances. Dr. Nkanyiso describes an expectation
       of signs of progress within 24 to 72 hours in many cases. This reflects his
-      spiritual beliefs; no result or timeframe is guaranteed.
+      spiritual beliefs; individual experiences and timing vary.
   - question: "Are the Services Confidential?"
     answer: >-
       Yes, absolutely. Your privacy is our priority. Dr. Nkanyiso respects every client's

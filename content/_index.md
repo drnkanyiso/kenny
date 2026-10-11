@@ -20,7 +20,7 @@ about:
 services:
   eyebrow: "Traditional practice"
   heading: "Spiritual services with Dr. Nkanyiso"
-  intro: "Explore Dr. Nkanyiso's self-described prayers, rituals, charms, and spellwork. These services reflect spiritual beliefs; no outcome or change in another person's feelings is guaranteed."
+  intro: "Explore Dr. Nkanyiso's prayers, rituals, charms, and spellwork, rooted in traditional spiritual beliefs. Each consultation considers your personal circumstances and concerns."
 
 practice_questions:
   eyebrow: "Understanding the practice"
@@ -29,7 +29,7 @@ practice_questions:
     - question: "What is a witch doctor or witch craft doctor?"
       answer: "Witch doctor and witch craft doctor are terms some people use for a traditional spiritual practitioner. Dr. Nkanyiso describes a practice involving ancestral knowledge, prayer, rituals and herbal traditions."
     - question: "Can a love spell caster bring ex lover back?"
-      answer: "People looking to bring an ex lover back may seek a love spell caster for spiritual guidance about a breakup. Dr. Nkanyiso offers consultations about reconciliation and relationships. Reconnecting depends on both people's freely made choices; no spell guarantees another person's return."
+      answer: "People looking to bring an ex lover back may seek a love spell caster for spiritual guidance about a breakup. Dr. Nkanyiso offers consultations about reconciliation and relationships. Reconnecting depends on both people's freely made choices and willingness to rebuild the relationship."
     - question: "What should I know when searching for the most powerful witchdoctor?"
       answer: "Most powerful witchdoctor is a phrase people use when looking for spiritual support. There is no independently verified ranking of spiritual power. Ask about the practitioner's approach, fees and expectations before booking a consultation."
 
@@ -57,7 +57,7 @@ countries:
 testimonials:
   eyebrow: "Personal experiences"
   heading: "Testimonials"
-  intro: "Accounts supplied by the site owner and edited for clarity. These personal experiences and spiritual beliefs have not been independently verified and do not establish effectiveness or guarantee similar results."
+  intro: "Accounts supplied by the site owner and edited for clarity. These personal experiences and spiritual beliefs have not been independently verified. Individual experiences and outcomes vary."
   items:
     - name: "Anne"
       location: "India"
@@ -91,8 +91,8 @@ ui:
   not_found_button: "Go to home"
 disclaimer: >-
   Services are based on African traditional healing and spiritual beliefs.
-  Experiences and outcomes vary; no result is guaranteed, and no service can
-  control another person's choices. Services are for adults aged 18 and over
+  Experiences and outcomes vary, and each person's choices should be respected.
+  Services are for adults aged 18 and over
   and are not a substitute for qualified medical, mental-health, financial, or
   legal advice.
 ---

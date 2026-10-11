@@ -9,7 +9,7 @@ weight: 1
 
 Have you experienced a breakup, unreturned feelings, loss of interest, humiliation, or recurring arguments? Dr. Nkanyiso offers spiritual consultations about reconciliation, loneliness, finding a suitable partner, and building trust, loyalty, and lasting bonds.
 
-His practice includes love spellwork and traditional charms. Reconciliation depends on the freely made choices of everyone involved; a partner's return within hours or one day is not guaranteed.
+His practice includes love spellwork and traditional charms. Reconciliation and its timing depend on the freely made choices of everyone involved.
 
 ## Love spell caster consultations
 

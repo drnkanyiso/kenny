@@ -9,4 +9,4 @@ weight: 4
 
 Feeling overlooked for promotion, worried about demotion, or hoping for greater responsibility and better pay? Dr. Nkanyiso offers spiritual consultation around career ambitions in public service, education, hospitality, business, and other workplaces.
 
-Prayer and traditional rituals form part of his stated practice; promotion, rank, influence, and income are not guaranteed.
+Prayer and traditional rituals form part of his stated practice. Career progress depends on workplace opportunities, performance, and decisions made by employers.

@@ -9,4 +9,4 @@ weight: 7
 
 Parents and guardians concerned about repeated poor results or a student's confidence can discuss spiritual support with Dr. Nkanyiso. His stated practice includes prayers, charms, spellwork, and traditional rings associated with education.
 
-These do not guarantee grades or graduation and should complement practical support from teachers and appropriate learning specialists.
+Educational progress depends on study, attendance, and individual learning needs. Spiritual practices should complement practical support from teachers and appropriate learning specialists.

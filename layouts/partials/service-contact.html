@@ -11,5 +11,5 @@
     {{ with .Site.Params.email }}<a class="button button-service" href="mailto:{{ . }}?subject={{ printf "Enquiry about %s" $.Title | urlquery }}">Send an email</a>{{ end }}
     <a class="text-link" href="{{ "/contact-us/" | relURL }}">Contact information {{ partial "icon.html" "arrow" }}</a>
   </div>
-  <p class="service-contact-note">Spiritual services reflect traditional beliefs. Outcomes are not guaranteed.</p>
+  <p class="service-contact-note">Spiritual services reflect traditional beliefs. Individual experiences and outcomes vary.</p>
 </aside>
