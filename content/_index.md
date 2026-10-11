@@ -7,10 +7,8 @@ hero:
   subtitle: "Traditional spiritual consultation for love, marriage, protection, career ambitions, talent, and educational concerns."
   image: "/images/home-hero-v2.png"
   image_alt: ""
-  contact_label: "Contact Us"
+  contact_label: "Book Consultation"
   contact_url: "/contact-us/"
-  call_label: "Call Us"
-  whatsapp_label: "Chat Via WhatsApp"
   scroll_label: "Discover more"
 about:
   eyebrow: "About Us"
@@ -22,6 +20,26 @@ services:
   eyebrow: "Traditional practice"
   heading: "Spiritual services with Dr. Nkanyiso"
   intro: "Explore Dr. Nkanyiso's self-described prayers, rituals, charms, and spellwork. These services reflect spiritual beliefs; no outcome or change in another person's feelings is guaranteed."
+
+countries:
+  eyebrow: "An international welcome"
+  heading: "Across borders, closer to you"
+  intro: "From Africa to Europe, the Americas and the Middle East, visitors from these countries are welcome to connect with Dr. Nkanyiso."
+  items:
+    - { name: "United States of America", abbreviation: "USA", flag: "us" }
+    - { name: "United Kingdom", abbreviation: "UK", flag: "gb" }
+    - { name: "Germany", flag: "de" }
+    - { name: "Switzerland", flag: "ch" }
+    - { name: "Jamaica", flag: "jm" }
+    - { name: "Norway", flag: "no" }
+    - { name: "Namibia", flag: "na" }
+    - { name: "Zambia", flag: "zm" }
+    - { name: "Zimbabwe", flag: "zw" }
+    - { name: "South Africa", flag: "za" }
+    - { name: "Uganda", flag: "ug" }
+    - { name: "South Sudan", flag: "ss" }
+    - { name: "Kenya", flag: "ke" }
+    - { name: "United Arab Emirates", abbreviation: "UAE", flag: "ae" }
 
 testimonials:
   eyebrow: "Personal experiences"
@@ -41,7 +59,7 @@ testimonials:
 contact_section:
   eyebrow: "Get in touch"
   heading: "Talk with Dr. Nkanyiso"
-  body: "Visit the contact page for updates on how to reach Dr. Nkanyiso."
+  body: "Call +254182952671 or connect on WhatsApp to discuss your consultation."
   button_label: "Contact Us"
 ui:
   skip_to_content: "Skip to content"

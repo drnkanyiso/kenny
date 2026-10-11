@@ -6,11 +6,11 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   footer_description = "Traditional spiritual guidance rooted in ancestral knowledge and African values."
-  hours = []
+  hours = ["Open 24/7 — Every day"]
   description = "Dr. Nkanyiso describes a practice rooted in African traditional values, ancestral knowledge, herbalism, and spiritual consultation."
-  phone = ""
+  phone = "+254182952671"
   email = ""
-  whatsapp_url = ""
+  whatsapp_url = "https://wa.me/254182952671"
   logo = "/images/logo.png"
   footer_logo = "/images/logo-footer.png"
   default_image = "/images/home-hero-v2.png"

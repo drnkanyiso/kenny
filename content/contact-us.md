@@ -8,7 +8,7 @@ intro:
   heading: "Let's start a conversation."
   body: "Explore consultation options and find answers to common questions about Dr. Nkanyiso's spiritual practice."
 contact:
-  phone: ""
+  phone: "+254182952671"
   email: ""
   address: ""
 form:
@@ -35,9 +35,9 @@ faq:
   - question: "Are the services confidential?"
     answer: "Ask about privacy and confidentiality before sharing personal information."
   - question: "Do I need to visit in person?"
-    answer: "Consultation arrangements should be discussed directly with Dr. Nkanyiso when contact details are available."
+    answer: "Discuss consultation arrangements directly with Dr. Nkanyiso by phone or WhatsApp before planning a visit."
   - question: "How do I get started?"
-    answer: "Contact details will be published here when available."
+    answer: "Call +254182952671 or use the WhatsApp button on this page to discuss your consultation."
 ---
 
 Contact Dr. Nkanyiso using the details on this page.

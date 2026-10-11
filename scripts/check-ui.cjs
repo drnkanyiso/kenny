@@ -68,7 +68,8 @@ const assert = (value, message) => { if (!value) throw new Error(message); };
     }
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto(baseURL + '/contact-us/');
-    assert(await page.locator('.contact-empty').isVisible(), 'missing contact empty state');
+    assert(await page.locator('.contact-card a[href="tel:+254182952671"]').isVisible(), 'missing contact phone link');
+    assert(await page.locator('.contact-whatsapp').getAttribute('href') === 'https://wa.me/254182952671', 'incorrect WhatsApp contact link');
     assert(await page.locator('.contact-form').count() === 0, 'unconfigured form shown');
     await page.locator('.faq-item summary').first().click();
     assert(await page.locator('.faq-item').first().getAttribute('open') !== null, 'FAQ did not open');

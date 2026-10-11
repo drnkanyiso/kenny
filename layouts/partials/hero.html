@@ -21,8 +21,6 @@
    <a class="button button-primary" href="#services">Explore services {{ partial "icon.html" "arrow" }}</a>
    <a class="button button-outline" href="{{ .contact_url | relURL }}">Contact information</a>
    {{ end }}
-   {{ with $.Site.Params.phone }}<a class="button button-outline" href="tel:{{ . }}">{{ $.Params.hero.call_label }}</a>{{ end }}
-   {{ with $.Site.Params.whatsapp_url }}<a class="button button-whatsapp" href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $.Params.hero.whatsapp_label }}</a>{{ end }}
   </div>
   <div class="hero-topics" aria-label="Areas of consultation"><span>Love &amp; marriage</span><span>Protection</span><span>Personal ambitions</span></div>
  </div>

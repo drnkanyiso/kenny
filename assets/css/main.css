@@ -71,6 +71,11 @@ p { text-wrap: pretty; }
 .hero .button-outline:hover { border-color: rgb(255 255 255 / 35%); background: rgb(255 255 255 / 8%); }
 .button-light { color: var(--purple-deep); background: white; }
 .button-light:hover { color: var(--purple); background: var(--cream); }
+.floating-whatsapp { position: fixed; right: max(1.5rem, env(safe-area-inset-right)); bottom: max(1.5rem, env(safe-area-inset-bottom)); z-index: 25; display: inline-flex; align-items: center; justify-content: center; width: 60px; height: 60px; padding: .8rem; border: 2px solid white; border-radius: 50%; color: white; background: var(--green); box-shadow: 0 6px 24px rgb(0 0 0 / 22%); text-decoration: none; transition: background-color 160ms ease, box-shadow 160ms ease; }
+.floating-whatsapp:hover { color: white; background: var(--green-dark); box-shadow: 0 8px 28px rgb(0 0 0 / 28%); }
+.floating-whatsapp svg { flex-shrink: 0; }
+.site-footer { padding-bottom: 6rem; }
+@media (max-width: 680px) { .floating-whatsapp { right: max(1rem, env(safe-area-inset-right)); bottom: max(1rem, env(safe-area-inset-bottom)); } }
 .hero-topics { display: flex; flex-wrap: wrap; gap: .7rem 1.5rem; max-width: 540px; margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid rgb(255 255 255 / 16%); color: #d5cadf; font-size: .8rem; }
 .hero-topics span { display: inline-flex; align-items: center; gap: .5rem; }
 .hero-topics span::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: #86efac; }
@@ -96,6 +101,17 @@ p { text-wrap: pretty; }
 .section-heading .eyebrow { justify-content: center; }
 .section-heading > p:not(.eyebrow) { max-width: 60ch; margin: 0 auto; color: var(--muted); font-size: 1.0625rem; line-height: 1.7; }
 .services-section { background: var(--cream); }
+.countries-section { background: radial-gradient(ellipse at top right, #e9ddf5 0%, transparent 55%), var(--paper); }
+.country-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .85rem; margin: 0; padding: 0; list-style: none; }
+.country-card { display: flex; align-items: center; gap: .8rem; min-width: 0; min-height: 92px; padding: 1.1rem; border: 1px solid var(--line); border-radius: 1rem; background: rgb(255 255 255 / 85%); box-shadow: 0 4px 18px rgb(43 24 65 / 3%); }
+.country-flag { flex-shrink: 0; width: 44px; height: 30px; object-fit: contain; border-radius: 2px; filter: drop-shadow(0 1px 2px rgb(43 24 65 / 15%)); }
+.country-name { color: var(--purple-deep); font-size: .93rem; font-weight: 650; line-height: 1.4; overflow-wrap: anywhere; }
+.country-abbreviation { margin-left: auto; padding: .15rem .4rem; border-radius: .35rem; color: var(--purple); background: var(--cream); font-size: .65rem; font-weight: 750; }
+.countries-footer { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1.75rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.countries-footer p { margin: 0; color: var(--muted); font-size: .9rem; }
+.countries-footer a { flex-shrink: 0; }
+@media (max-width: 1000px) { .country-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .country-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .country-card { flex-wrap: wrap; gap: .6rem; padding: .9rem; } .country-name { flex-basis: 100%; order: 2; } .countries-footer { flex-direction: column; align-items: flex-start; } }
 .service-card, .article-card { overflow: hidden; border: 1px solid var(--line); border-radius: 1.15rem; background: white; transition: border-color 180ms ease, box-shadow 180ms ease; }
 .service-card:hover, .article-card:hover { border-color: #c5aedb; box-shadow: var(--shadow); }
 .service-image-wrap { position: relative; overflow: hidden; }
