@@ -29,9 +29,9 @@ practice_questions:
     - question: "What is a witch doctor or witch craft doctor?"
       answer: "Witch doctor and witch craft doctor are terms some people use for a traditional spiritual practitioner. Dr. Nkanyiso describes a practice involving ancestral knowledge, prayer, rituals and herbal traditions."
     - question: "Can a love spell caster bring ex lover back?"
-      answer: "People looking to bring an ex lover back may seek a love spell caster for spiritual guidance about a breakup. Dr. Nkanyiso offers consultations about reconciliation and relationships. Reconnecting depends on both people's freely made choices and willingness to rebuild the relationship."
+      answer: "People looking to bring an ex lover back may seek a love spell caster for spiritual guidance about a breakup. Dr. Nkanyiso offers consultations about reconciliation and relationships."
     - question: "What should I know when searching for the most powerful witchdoctor?"
-      answer: "Most powerful witchdoctor is a phrase people use when looking for spiritual support. There is no independently verified ranking of spiritual power. Ask about the practitioner's approach, fees and expectations before booking a consultation."
+      answer: "Reputation and experience"
 
 countries:
   eyebrow: "An international welcome"
