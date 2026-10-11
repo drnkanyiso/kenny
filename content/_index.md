@@ -39,6 +39,7 @@ countries:
     - { name: "Uganda", flag: "ug" }
     - { name: "South Sudan", flag: "ss" }
     - { name: "Kenya", flag: "ke" }
+    - { name: "Seychelles", flag: "sc" }
     - { name: "United Arab Emirates", abbreviation: "UAE", flag: "ae" }
 
 testimonials:
