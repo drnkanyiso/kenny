@@ -4,6 +4,7 @@
   "scripts": {
     "start": "npm run css && hugo server --disableFastRender",
     "check:ui": "node scripts/check-ui.cjs",
+    "check:sitemap": "node scripts/check-sitemap.cjs",
     "css": "tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind.generated.css --minify",
     "css:watch": "tailwindcss -i assets/css/tailwind.css -o assets/css/tailwind.generated.css --watch",
     "build": "npm run css && hugo --gc --minify --cleanDestinationDir"
