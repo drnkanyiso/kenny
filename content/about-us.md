@@ -1,6 +1,6 @@
 ---
 title: "About Us"
-description: "Dr. Nkanyiso describes a traditional spiritual practice rooted in African values, ancestral knowledge, and herbal traditions."
+description: "Learn about Dr. Nkanyiso's practice as a traditional doctor, spiritual healer and herbalist, known in Swahili as a mganga wa nguvu."
 type: "about"
 featured_image: "/images/about-v2-1000.jpg"
 image_alt: "Hands arranging fresh herbs beside a wooden mortar and purple woven cloth"
@@ -8,7 +8,7 @@ image_alt: "Hands arranging fresh herbs beside a wooden mortar and purple woven 
 
 ## Ancestral knowledge
 
-Dr. Nkanyiso describes himself as a traditionalist, herbalist, and spiritual practitioner. His stated approach draws on African traditional values, religious beliefs, and clan customs. Ancestors and spirits are an important part of his worldview.
+Dr. Nkanyiso describes himself as a traditional doctor, herbalist, and spiritual healer. Some visitors use the terms witch doctor or mganga wa nguvu when seeking this kind of spiritual guidance. His stated approach draws on African traditional values, religious beliefs, and clan customs. Ancestors and spirits are an important part of his worldview.
 
 ## Spiritual practice
 

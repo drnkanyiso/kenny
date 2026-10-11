@@ -4,6 +4,7 @@
 {{ else }}
   {{ $title = printf "%s | %s" .Title .Site.Title }}
 {{ end }}
+{{ with .Params.seo_title }}{{ $title = . }}{{ end }}
 {{ $description := .Description | default .Site.Params.description }}
 {{ $image := .Params.featured_image | default .Site.Params.default_image }}
 {{ with resources.Get (strings.TrimPrefix "/" $image) }}

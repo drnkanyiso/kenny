@@ -1,0 +1,16 @@
+{{ with .Params.practice_questions }}
+<section class="section" aria-labelledby="practice-questions-heading">
+  <div class="section-inner">
+    <header class="section-heading">
+      <p class="eyebrow">{{ .eyebrow }}</p>
+      <h2 id="practice-questions-heading">{{ .heading }}</h2>
+    </header>
+    {{ range .items }}
+    <details class="faq-item">
+      <summary>{{ .question }} {{ partial "icon.html" "chevron" }}</summary>
+      <p>{{ .answer }}</p>
+    </details>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

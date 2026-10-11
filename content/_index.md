@@ -1,6 +1,7 @@
 ---
 title: "Dr. Nkanyiso"
-description: "Dr. Nkanyiso describes a practice rooted in African traditional values, ancestral knowledge, herbalism, and spiritual consultation."
+description: "Meet Dr. Nkanyiso, a witch doctor, traditional doctor, spiritual healer and herbalist offering love spell caster consultations rooted in African traditions."
+seo_title: "Witch Doctor & Love Spell Caster | Dr. Nkanyiso"
 hero:
   heading: "Trusted Witchdoctor for Love, Business, Family & Spiritual Challenges"
   heading_lead: "Trusted Witchdoctor"
@@ -13,13 +14,24 @@ hero:
 about:
   eyebrow: "About Us"
   heading: "Ancestral knowledge, carried forward"
-  summary: "Learn about Dr. Nkanyiso's traditional spiritual practice, ancestral knowledge, and approach to personal concerns."
+  summary: "Dr. Nkanyiso describes his practice as a traditional doctor, spiritual healer and herbalist, drawing on African ancestral knowledge. Known in Swahili as a mganga wa nguvu, he offers spiritual consultations for love, family and personal concerns."
   button_label: "Read more"
 
 services:
   eyebrow: "Traditional practice"
   heading: "Spiritual services with Dr. Nkanyiso"
   intro: "Explore Dr. Nkanyiso's self-described prayers, rituals, charms, and spellwork. These services reflect spiritual beliefs; no outcome or change in another person's feelings is guaranteed."
+
+practice_questions:
+  eyebrow: "Understanding the practice"
+  heading: "Your questions, answered"
+  items:
+    - question: "What is a witch doctor or witch craft doctor?"
+      answer: "Witch doctor and witch craft doctor are terms some people use for a traditional spiritual practitioner. Dr. Nkanyiso describes a practice involving ancestral knowledge, prayer, rituals and herbal traditions."
+    - question: "Can a love spell caster bring ex lover back?"
+      answer: "People looking to bring an ex lover back may seek a love spell caster for spiritual guidance about a breakup. Dr. Nkanyiso offers consultations about reconciliation and relationships. Reconnecting depends on both people's freely made choices; no spell guarantees another person's return."
+    - question: "What should I know when searching for the most powerful witchdoctor?"
+      answer: "Most powerful witchdoctor is a phrase people use when looking for spiritual support. There is no independently verified ranking of spiritual power. Ask about the practitioner's approach, fees and expectations before booking a consultation."
 
 countries:
   eyebrow: "An international welcome"
